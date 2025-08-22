@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Check tools
+    command: |
+      aws --version || echo "AWS CLI not yet installed"
+      terraform -version || echo "Terraform not yet installed"
